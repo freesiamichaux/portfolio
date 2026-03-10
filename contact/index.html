@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-3">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <!-- Navbar brand -->
+                <a href="../index.html" class="navbar-brand text-dark text-decoration-none fs-4">FM</a>
+                
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Nav items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex gap-md-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about/index.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects/index.html">Projets</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../contact/index.html">Contact</a>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="conatct py-5">
+            <div class="container">
+                
+                <div class="row mb-5">
+                    <div class="col">
+                        <h2 class="text-center">Contact</h2>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col">
+                        <p class="text-center fs-5">Envie de travailler ensemble sur des projets ? Contactez-moi !</p>
+                    </div>
+                </div>
+                <!-- Contact form -->
+                <div class="row mb-md-5 d-flex justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="row gy-4" target="_blank">
+
+                            <input type="hidden" name="access_key" value="aa3b91c7-fc93-4ffb-b229-ce4f1f9a0f8a">
+                            <input type="checkbox" name="botcheck" style="display:none;">
+                            <input type="hidden" name="subject" value="Nouveau message depuis mon portfolio">
+
+                            <div class="col-6">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Nom complet" required>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="exemple@email.com" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" name="message" id="message" rows="8" placeholder="Dites-moi ce que vous avez en tête..." required></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary w-25 p-2 rounded-pill shadow-sm">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="border-top mt-5">
+        <div class="container py-4">
+            <div class="row gy-2 gy-md-0 align-items-end">
+                <div class="col-12 col-md-4 small">© 2026 Freesia Michaux</div>
+                <!-- Icons links -->
+                <div class="col-12 col-md-4 text-md-center mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="mailto:freesia.michaux@outlook.com" class="icon-link" rel="noopener noreferrer" aria-label="Envoyer un mail">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </a>
+                        </li>
+                         <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/freesiamichaux/" target="_blank" class="icon-link" rel="noopener noreferrer" aria-label="Lien LinkedIn">
+                                <i class="bi bi-linkedin fs-4"></i>
+                            </a>
+                        </li>
+                         <li class="list-inline-item">
+                            <a href="https://github.com/freesiamichaux" target="_blank" class="icon-link" rel="noopener noreferrer" aria-label="Lien GitHub">
+                                <i class="bi bi-github fs-4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="col-12 col-md-4 text-md-end"> 
+                    <!-- Email -->
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mb-md-3">
+                           <a href="mailto:freesia.michaux@outlook.com" class="email-link text-decoration-none small" target="_blank" rel="noopener noreferrer">freesia.michaux@outlook.com</a> 
+                        </li>
+                    </ul>
+                    <!-- Legal footer -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                           <a href="../legal/mentions-legales.html" class="text-decoration-none footer-legal legal-link small" target="_blank" rel="noopener noreferrer">Mentions légales</a>
+                        </li>  
+                        
+                        <li class="list-inline-item">
+                           <a href="../legal/politique-confidentialite.html" class="text-decoration-none legal-link small" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a>
+                        </li>   
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

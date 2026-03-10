@@ -1,0 +1,107 @@
+// Variables couleurs
+$main-text-color: #2A2A2A;
+
+/* SCSS */
+html {
+  scroll-behavior: smooth;
+  font-size: 1.125rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  font-size: 20px / 18px * 1rem;
+}
+
+body {
+    font-family: $font-family-base;
+    
+    background: linear-gradient(
+    to bottom,
+    #E6F7FF 0%,
+    #B3D8FF 50%,    
+    #609EFF 100% 
+    );
+
+    color: $main-text-color !important;
+    line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;          // mobile full width
+  border-radius: 1rem;  // équivalent rounded-4
+
+
+  @media (min-width: 768px) {  
+    width: 80%;       
+  }
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: cnter;
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #B3D8FF; /* couleur du tag */
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  color: #E6F7FF;
+  transition: 0.2s;
+}
+
+.legal-link:hover {
+  color: #E6F7FF;
+  transition: 0.2s;
+}
+
+.icon-link:hover  {
+  color: #E6F7FF;
+  transition: 0.2s;
+}
+
+.title-project:hover  {
+  color: #E6F7FF;
+  transition: 0.2s;
+}
+
+.nav-link {
+  color: $main-text-color;
+  text-decoration: none;
+  position: relative; // la ligne ::after est positionnée par rapport au lien
+
+  // Ligne
+  &::after {
+    content: "";                // pseudo-élément vide
+    position: absolute;         // on peut le placer précisément
+    left: 0;                    // commence à gauche
+    bottom: -1px;               // juste sous le texte
+    height: 1px;                // épaisseur de la ligne
+    width: 0;                   // invisible au départ
+    background-color: $main-text-color;  // couleur de la ligne
+    transition: width 0.3s;     // animation fluide
+  }
+
+  // Hover
+  &:hover::after {
+    width: 100%;                // la ligne s’étend sur toute la largeur du lien
+  }
+}
+
+.footer-legal::after {
+    content: "|";
+    margin-left: 0.5rem;
+    color: $main-text-color;
+}
